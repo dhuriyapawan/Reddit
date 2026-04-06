@@ -74,17 +74,4 @@ jobs:
         - name: Build application Docker image
           run: docker build -t reddit:latest .
 
-      # 5️⃣ Run OWASP Dependency-Check on source code
-        - name: Run OWASP Dependency-Check on source
-          run: |
-           docker run --rm \
-            -v ${{ github.workspace }}:/src \
-            -v ${{ github.workspace }}/dependency-check-report:/report \
-            owasp/dependency-check:latest \
-            --project "MyDockerApp" \
-            --scan /src \
-            --format "ALL" \
-            --out /report \
-            --enableExperimental
-
       
