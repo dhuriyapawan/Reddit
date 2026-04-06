@@ -52,6 +52,8 @@ jobs:
           env:
              SONAR_TOKEN : ${{secrets.SONAR_TOKEN}}
              SONAR_HOST_URL: ${{secrets.SONAR_HOST_URL}}
+             SONAR_PROJECT_KEY: reddit       # must match project key on SonarCloud
+             SONAR_ORGANIZATION: https://sonarcloud.io
 
         - name: Configure AWS Credentials
           uses: aws-actions/configure-aws-credentials@v2
