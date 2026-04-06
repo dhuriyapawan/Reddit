@@ -1,0 +1,22 @@
+{
+  "name": "reddit",
+  "version": "1.0.0",
+  "description": "A Node.js project for Reddit clone or demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo \"Build step (add your build command here)\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "sonar": "sonar-scanner"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "sonarqube-scanner": "^2.8.0"
+  }
+}
